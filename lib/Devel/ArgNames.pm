@@ -5,7 +5,7 @@ package Devel::ArgNames;
 use strict;
 use warnings;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 use base qw(Exporter);
 
@@ -71,7 +71,7 @@ choose from. This is a DIY kit ;-)
 
 This function will return the names associated with the variables found on
 C<@_>, at the level $level. If C<$level> is not provided C<arg_names>'s
-caller's caller will be used (C<<$level == 2>> in that case).
+caller's caller will be used (C<$level == 2> in that case).
 
 =back
 
@@ -80,6 +80,11 @@ caller's caller will be used (C<<$level == 2>> in that case).
 This module is maintained using Darcs. You can get the latest version from
 L<http://nothingmuch.woobling.org/Devel-ArgNames/>, and use C<darcs send> to
 commit changes.
+
+=head1 SEE ALSO
+
+L<Data::Dumper::Simple>, L<DB>, L<Devel::Caller>, L<Devel::Caller::Perl>,
+L<PadWalker>.
 
 =head1 AUTHORS
 
